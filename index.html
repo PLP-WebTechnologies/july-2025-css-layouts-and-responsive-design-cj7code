@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Living</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+  <!-- The header contains the website title and navigation bar -->
+  <header>
+    <h1>Healthy Living</h1>
+    <!-- Navigation menu that will be styled with Flexbox -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tips">Health Tips</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <!-- A big banner to welcome users -->
+  <section class="hero" id="home">
+    <h2>Live Better, Feel Better</h2>
+    <p>Discover healthy habits for a happier life.</p>
+  </section>
+
+  <!-- ================= MAIN CONTENT WITH GRID ================= -->
+  <!-- Using CSS Grid to create two columns: 
+       - Left: Article
+       - Right: Sidebar with quick facts -->
+  <main class="grid-layout">
+    <!-- Content Area -->
+    <article id="articles">
+      <h2>Featured Article</h2>
+      <p>
+        Good health is not something we can buy. However, it can be an extremely valuable savings account. 
+        Eating balanced meals, exercising, and managing stress are key parts of a healthy lifestyle.
+      </p>
+    </article>
+
+    <!-- Sidebar Area -->
+    <aside>
+      <h3>Quick Facts</h3>
+      <ul>
+        <li>Drink at least 8 glasses of water daily.</li>
+        <li>Exercise 30 minutes, 5 times a week.</li>
+        <li>Sleep 7–9 hours per night.</li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- ================= FLEXBOX CARDS ================= -->
+  <!-- This section uses Flexbox to arrange cards horizontally 
+       and wrap them on smaller screens -->
+  <section class="cards" id="tips">
+    <h2>Healthy Tips</h2>
+    <div class="card-container">
+      <!-- Each "card" is a small box with health advice -->
+      <div class="card">
+        <h3>Eat Fruits</h3>
+        <p>Fruits are packed with vitamins, fiber, and antioxidants.</p>
+      </div>
+      <div class="card">
+        <h3>Stay Active</h3>
+        <p>Regular exercise boosts energy and strengthens the heart.</p>
+      </div>
+      <div class="card">
+        <h3>Mental Wellness</h3>
+        <p>Meditation and mindfulness reduce stress and improve mood.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <!-- The footer contains copyright info -->
+  <footer id="contact">
+    <p>&copy; 2025 Healthy Living | Contact us: info@healthyliving.com</p>
+  </footer>
+</body>
+</html>
