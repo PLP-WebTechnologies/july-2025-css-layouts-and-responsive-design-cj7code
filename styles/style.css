@@ -1,0 +1,126 @@
+/* =============== GLOBAL STYLES =============== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; /* Remove default margins */
+  line-height: 1.6; /* Improve text readability */
+}
+
+/* =============== HEADER (Flexbox) =============== */
+header {
+  background: #2c7a7b;
+  color: white;
+  padding: 1rem;
+
+  /* Flexbox is used here:
+     - Places title and nav on one row
+     - Spaces them apart evenly
+     - Centers them vertically */
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;   /* Flexbox arranges menu items in a row */
+  gap: 1rem;       /* Adds space between links */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* =============== HERO SECTION =============== */
+.hero {
+  /* Background image with cover fit */
+  background: url('https://picsum.photos/1200/400?health') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+/* =============== MAIN SECTION (Grid) =============== */
+.grid-layout {
+  /* CSS Grid is used here:
+     - Two columns (2 parts for article, 1 part for sidebar)
+     - Gap between columns */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.grid-layout article, 
+.grid-layout aside {
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* =============== FLEXBOX CARDS =============== */
+.cards {
+  padding: 2rem;
+  background: #e6fffa;
+}
+
+.card-container {
+  display: flex;       /* Flexbox arranges cards in a row */
+  gap: 1rem;           /* Space between cards */
+  flex-wrap: wrap;     /* Cards wrap to new row on smaller screens */
+  justify-content: center; /* Center cards horizontally */
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  /* flex: grow shrink basis
+     - grow: 1 (can expand if space is available)
+     - shrink: 1 (can shrink if needed)
+     - basis: 250px (starting width) */
+  flex: 1 1 250px;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* =============== FOOTER =============== */
+footer {
+  text-align: center;
+  background: #2c7a7b;
+  color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* =============== RESPONSIVE DESIGN =============== */
+/* Media Queries adjust the layout for tablets & mobile */
+
+/* Tablets (screen width <= 768px) */
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr; /* Stack article and sidebar */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack menu vertically */
+    gap: 0.5rem;
+  }
+}
+
+/* Mobile (screen width <= 480px) */
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 1rem; /* Reduce padding for small screens */
+  }
+
+  header {
+    flex-direction: column; /* Stack title and nav */
+    text-align: center;
+  }
+}
