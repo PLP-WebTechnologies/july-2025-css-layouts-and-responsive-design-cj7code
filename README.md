@@ -49,3 +49,32 @@ The code should demonstrate:
 * Creativity and attention to layout detail
 
 
+=======================================================================
+
+# Student Assignment README
+# CSS Basics & The Box Model – Health Webpage
+
+## Overview
+This project demonstrates the fundamentals of CSS styling and the Box Model using a health-related topic: **Healthy Living & Nutrition**.  
+It was created as part of the **CSS Basics & Box Model Assignment**.
+
+## Files Included
+- **index.html** → The main HTML file containing the structured content.
+- **styles.css** → The external stylesheet containing all styling rules.
+- **README.md** → This documentation file.
+
+## Key Features
+- **External CSS Linking** – Styles are applied via a separate stylesheet.
+- **Basic CSS Properties** – Usage of color, font-size, background, margin, padding, and border.
+- **Box Model Demonstration** – A dedicated section visually shows how margin, padding, and border affect an element.
+- **Health-Themed Content** – Focus on healthy living and nutrition tips.
+- **Clean & Organized Code** – Proper indentation, comments, and sectioning for readability.
+
+## How to View
+1. Download the project files (`index.html` and `styles.css`).
+2. Ensure both files are in the same folder.
+3. Open `index.html` in any modern web browser (Chrome, Edge, Firefox, Safari).
+4. Scroll down to see the **Box Model Demonstration**.
+
+---
+© 2025 – Created for CSS Basics & Box Model Assignment - PLP Academy
